@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jony de Oliveira</title>
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/classes.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css" />
+    <link rel="stylesheet" href="./assets/css/elements.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+    <aside class="menu white-bg">
+      <div class="main-content menu-content">
+        <h1>
+          <a href="#">JONY DE OLIVEIRA</a>
+        </h1>
+
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false;">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="inicio" class="main-bg section">
+      <div class="main-content inicio-content">
+        <div class="inicio-text-content">
+          <h2>Início</h2>
+          <p>
+            Bem vindo(a) ao meu site! Esse é o primeiro site que eu criei,
+            basicamente uma landing page simples, somente para treinamento
+            inicial.
+          </p>
+        </div>
+        <div class="inicio-img">
+          <img
+            src="./assets/imgs/jonydeoliveiralogo.svg"
+            alt="jonydeoliveiralogo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="white-bg section">
+      <div class="main-content portfolio-content">
+        <h2>Portfólio</h2>
+        <img src="./assets/imgs/portfolio-example.jpg" />
+      </div>
+    </section>
+
+    <section id="cursos" class="cursos main-bg section">
+      <div class="main-content cursos-content">
+        <h2 class="cursos-main-heading">Cursos</h2>
+          <div class="grid">
+            <div>
+              <h3>Algoritmos e Lógica de Programação</h3>
+              <img src="./assets/imgs/logica-programacao.png" />
+            </div>
+            <div>
+              <h3>Programação em JavaScript</h3>
+              <img src="./assets/imgs/js-geek.png" />
+            </div>
+            <div>
+              <h3>Curso de JavaScript e TypeScript</h3>
+              <img src="./assets/imgs/js-otavio.png" />
+            </div>
+            <div>
+              <h3>Programação em Python</h3>
+              <img src="./assets/imgs/python-geek.png" />
+            </div>
+            <div>
+              <h3>Programação Web com Python e Django Framework</h3>
+              <img src="./assets/imgs/django-geek.png" />
+            </div>
+            <div>
+              <h3>Curso APIs REST com Python e Django REST Framework</h3>
+              <img src="./assets/imgs/api-geek.png" />
+            </div>
+            <div>
+              <h3>Banco de Dados SQL e NoSQL do básico ao avançado</h3>
+              <img src="./assets/imgs/banco-dados-geek.png" />
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="white-bg section">
+      <div class="main-content sobre-content">
+        <h2>Sobre</h2>
+        <p>
+          Olá, meu nome é Jony de Oliveira Santos, nascido em 03 de Maio de
+          1992. Sou nascido no Brasil mais precisamente no estado de Pernambuco
+          na cidade de Recife. Sempre amei a área de tecnologia mas devido a
+          alguns fatores externos acabei fazendo faculdade de Biomedicina. Sou
+          formado em Biomedicina pela UFPE(Universidade Federal de Pernambuco) e
+          trabalhei 5 anos na área, porém resolvi realizar meu sonho de
+          trabalhar na área de tecnlogia e com a descoberta de que hoje em dia é
+          uma área muito receptiva eu resolvi entrar de cabeça mesmo não tendo o
+          curso superior na área. Estou fazendo (e irei fazer mais) cursos da
+          área, penso atualmente em ir mais para a parte de back-end porém estou
+          estudando front-end também, penso em ser um fullstack com prioridade
+          em back-end. Estou ALTAMENTE feliz estudando/aprendendo o que gosto e
+          sinto muita alegria durante todo esse processo, pois é realmente a
+          área que eu amo.
+        </p>
+      </div>
+    </section>
+
+    <section id="contato" class="main-bg section">
+      <div class="main-content contato-form">
+        <h2>Contato</h2>
+        <fieldset class="form-grid">
+          <legend>Entre em Contato</legend>
+
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu Nome">
+          </div>
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Seu Sobrenome">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Seu E-mail">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+          </div>
+          <div class="form-group full-width">
+            <button type="submit">Enviar Mensagem</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+      <p><a target="_blank" href="https://github.com/jonydeoliveira">Feito por Jony de Oliveira</a></p>
+    </footer>
+
+    <a class="back-to-inicio" href="#inicio">⇪</a>
+  </body>
+</html>
